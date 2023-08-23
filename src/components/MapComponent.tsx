@@ -9,8 +9,7 @@ import {
 } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 import L from "leaflet";
-import { Box, Button, Slider, TextField, Typography } from "@mui/material";
-import { BufferMapControls } from "./BufferMapControls";
+import { Box } from "@mui/material";
 
 // Custom marker icon
 const customIcon = new L.Icon({

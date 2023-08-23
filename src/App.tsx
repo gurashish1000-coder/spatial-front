@@ -1,4 +1,3 @@
-import MapComponent from "./components/MapComponent";
 import { ThemeProvider } from "@mui/material/styles";
 import customTheme from "./theme";
 import { MainLayout } from "./containers/MainLayout";
