@@ -4,6 +4,17 @@
 Access the live website [here](http://3.208.91.132:3000/) \
 back-end code [here](https://github.com/gurashish1000-coder/spatial-back)
 
+## How does it work ?
+### front-end
+Using the front-end interface, you can zoom in to a specific location, such as Dallas, Texas. After selecting a point, use the slider to define the desired range, and then click the "Request Data" button. The interface will display the total population and average income based on the selected parameters.
+
+### back-end
+1. **Location and Range Input:** The backend program receives the specified location and range.
+2. **Intersecting Polygons:** The program identifies all polygons in the database that intersect with the provided location range.
+3. **Centroid Calculation:** The centroids of these polygons are calculated.
+4. **Centroid Inclusion Check:** Each centroid's inclusion within the defined location buffer (range) is verified. 
+5. **Calculation Selection:** Only polygons with centroids within the buffer are considered for subsequent calculations.
+   
 ## Available Scripts
 In the project directory, you can run:
 ### `npm start`
