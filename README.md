@@ -1,11 +1,22 @@
-# Getting Started with Create React App
+# Getting Started 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Hosted Version 
+Access the live website [here](http://52.23.180.55:3000/) \
+back-end code [here](https://github.com/gurashish1000-coder/spatial-back)
 
+## How does it work ?
+### front-end
+Using the front-end interface, you can zoom in to a specific location, such as Dallas, Texas. After selecting a point, use the slider to define the desired range, and then click the "Request Data" button. The interface will display the total population and average income based on the selected parameters.
+
+### back-end
+1. **Location and Range Input:** The backend program receives the specified location and range.
+2. **Intersecting Polygons:** The program identifies all polygons in the database that intersect with the provided location range.
+3. **Centroid Calculation:** The centroids of these polygons are calculated.
+4. **Centroid Inclusion Check:** Each centroid's inclusion within the defined location buffer (range) is verified. 
+5. **Calculation Selection:** Only polygons with centroids within the buffer are considered for subsequent calculations.
+   
 ## Available Scripts
-
 In the project directory, you can run:
-
 ### `npm start`
 
 Runs the app in the development mode.\
@@ -39,8 +50,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
