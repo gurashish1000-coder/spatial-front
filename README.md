@@ -1,7 +1,7 @@
 # Getting Started 
 
 ## Hosted Version 
-Access the live website [here](http://3.208.91.132:3000/) \
+Access the live website [here](http://52.23.180.55:3000/) \
 back-end code [here](https://github.com/gurashish1000-coder/spatial-back)
 
 ## How does it work ?
