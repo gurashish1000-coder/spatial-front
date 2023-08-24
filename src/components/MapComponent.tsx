@@ -44,8 +44,8 @@ export const MapComponent: React.FC<MapComponentProps> = ({
         }}
       >
         <MapContainer
-          center={[0, 0]}
-          zoom={2}
+          center={[33.17494, -96.59600]}
+          zoom={12}
           style={{
             width: "80%",
             height: "70%",

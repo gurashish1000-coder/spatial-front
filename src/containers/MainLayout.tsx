@@ -5,7 +5,7 @@ import MapComponent from "../components/MapComponent";
 
 export const MainLayout = () => {
   const [selectedPoint, setSelectedPoint] = useState<L.LatLng | null>(null);
-  const [bufferDistance, setBufferDistance] = useState<number>(4);
+  const [bufferDistance, setBufferDistance] = useState<number>(0.5);
   return (
     <Box style={{ backgroundColor: "#264653" }}>
       <BufferMapControls

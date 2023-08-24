@@ -5,6 +5,7 @@ import {
   Button,
   useTheme,
   CircularProgress,
+  Alert,
 } from "@mui/material";
 import { fetchData } from "../services/api";
 import { useState } from "react";
@@ -83,10 +84,10 @@ export const BufferMapControls: React.FC<BufferMapControlsProps> = ({
             aria-label="Temperature"
             value={bufferDistance}
             valueLabelDisplay="auto"
-            step={2}
+            step={0.5}
             marks
             min={0}
-            max={50}
+            max={10}
             onChange={(e, value) => setBufferDistance(value as number)}
             sx={{
               maxWidth: "300px",
@@ -126,6 +127,19 @@ export const BufferMapControls: React.FC<BufferMapControlsProps> = ({
             <Typography>
               Average Income: ${responseData.averageIncome.toLocaleString()}
             </Typography>
+          </Box>
+        )}
+        {responseData?.totalPopulation === 0 && (
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              paddingTop: "5px",
+            }}
+          >
+            <Alert severity="warning" sx={{ width: "50%" }}>
+              No data found for this area. Consider increasing the buffer size.
+            </Alert>
           </Box>
         )}
       </Box>
